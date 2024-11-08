@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.cit.lab.dubbo</groupId>
-    <artifactId>lab-dubbo</artifactId>
+    <groupId>com.cit.operation.platform</groupId>
+    <artifactId>lab-platform</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>lab-dubbo</name>
+    <name>lab-platform</name>
     <description>Demo project for Apache Dubbo</description>
     <properties>
         <java.version>1.8</java.version>
@@ -20,9 +20,9 @@
     </properties>
 
     <modules>
-        <module>lab-dubbo-log</module>
-        <module>lab-dubbo-order</module>
-        <module>lab-dubbo-good</module>
+        <module>lab-log</module>
+        <module>lab-order</module>
+        <module>lab-good</module>
     </modules>
 
     <dependencyManagement>
@@ -57,8 +57,8 @@
                 <version>${opentelemetry-exporter-otlp.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cit.lab.dubbo</groupId>
-                <artifactId>lab-dubbo-log</artifactId>
+                <groupId>com.cit.operation.platform</groupId>
+                <artifactId>lab-log</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
