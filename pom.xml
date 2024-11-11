@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cit.operation.platform</groupId>
     <artifactId>lab-platform</artifactId>
@@ -13,10 +13,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <dubbo.version>3.2.10</dubbo.version>
-        <spring-boot.version>2.7.10</spring-boot.version>
+        <spring-boot.version>2.7.12</spring-boot.version>
         <logstash-logback-encoder.version>6.2</logstash-logback-encoder.version>
         <micrometer-tracing-bridge-otel.version>1.2.2</micrometer-tracing-bridge-otel.version>
         <opentelemetry-exporter-otlp.version>1.34.1</opentelemetry-exporter-otlp.version>
+        <mysql-connector-j.version>9.0.0</mysql-connector-j.version>
+        <protobuf-java.version>3.25.5</protobuf-java.version>
+        <logback-classic.version>1.4.12</logback-classic.version>
+        <lab-log.version>0.0.1-SNAPSHOT</lab-log.version>
+        <nacos-client.version>2.2.1</nacos-client.version>
+        <druid-spring-boot-starter.version>1.2.20</druid-spring-boot-starter.version>
+        <druid.version>1.2.20</druid.version>
+        <mybatis-plus-boot-stater.version>3.5.3.1</mybatis-plus-boot-stater.version>
     </properties>
 
     <modules>
@@ -59,12 +67,32 @@
             <dependency>
                 <groupId>com.cit.operation.platform</groupId>
                 <artifactId>lab-log</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>${lab-log.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-client</artifactId>
-                <version>2.2.1</version>
+                <version>${nacos-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-stater.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql-connector-j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -12,3 +12,12 @@ dubbo:
     port: 50055
 server:
   port: 9086
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/lab_order?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+      username: root
+      password: root_123
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
